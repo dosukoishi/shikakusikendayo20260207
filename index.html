@@ -67,11 +67,11 @@
             transition: all 0.3s ease;
         }
         .question-block.correct {
-            border-left: 5px solid #2ecc71; /* Green */
+            border-left: 5px solid #2ecc71;
             background-color: #f1fef5;
         }
         .question-block.incorrect {
-            border-left: 5px solid #e74c3c; /* Red */
+            border-left: 5px solid #e74c3c;
             background-color: #fff6f5;
         }
         .question {
@@ -95,8 +95,23 @@
         .options label:hover {
             background-color: #f1f1f1;
         }
-        .options input {
+        .options input[type="radio"],
+        .options input[type="checkbox"] {
             margin-right: 10px;
+        }
+        .descriptive-input-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .descriptive-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 150px;
+            font-size: 16px;
         }
         .btn {
             display: inline-block;
@@ -337,7 +352,7 @@
         },
         {
             "id": "docomo-12",
-            "question": "次の文章は「ドコモでんき」について述べたものです。正しいか間違っているかを選びなさい。　　\n\n◎「ドコモでんき」を利用するとdポイントが還元される対象はdカード保有者のみである。",
+            "question": "次の文章は「ドコモでんき」について述べたものです。正しいか間違っているかを選びなさい。  \n\n◎「ドコモでんき」を利用するとdポイントが還元される対象はdカード保有者のみである。",
             "options": [
                 "正しい",
                 "間違っている"
@@ -349,7 +364,7 @@
         },
         {
             "id": "docomo-13",
-            "question": "空欄（　）に当てはまる回答として正しいものを下記から一つ選びなさい。\n\n◎ドコモmini 4GB のプランでｄカードGOLD、光セット、でんきセットに加入した場合の月額料金は税込（　）です。",
+            "question": "空欄（ ）に当てはまる回答として正しいものを下記から一つ選びなさい。\n\n◎ドコモmini 4GB のプランでｄカードGOLD、光セット、でんきセットに加入した場合の月額料金は税込（ ）です。",
             "options": [
                 "１１００円",
                 "９９０円",
@@ -520,7 +535,7 @@
                 "ドコモ光セット割",
                 "home5Gセット割",
                 "ドコモでんきセット割",
-                "ドコモガスセット割"
+                "ガスセット割"
             ],
             "answer": [
                 "7"
@@ -555,12 +570,12 @@
         },
         {
             "id": "docomo-28",
-            "question": "契約後、いつからドコモでんきに切り替わりますか？空欄に当てはまる正しい組み合わせを選びなさい。「新規契約：申込日＋(　)の希望日から利用開始。他社からの切り替え：申込日＋(　)の次回または次々回検針日から切り替え。」",
+            "question": "契約後、いつからドコモでんきに切り替わりますか？空欄に当てはまる正しい組み合わせを選びなさい。「新規契約：申込日＋( )の希望日から利用開始。他社からの切り替え：申込日＋( )の次回または次々回検針日から切り替え。」",
             "options": [
-                "２週間以内　７日以降",
-                "15日以内　31日以降",
-                "31日以内　15日以降",
-                "7日以内　2週間以降"
+                "２週間以内 ７日以降",
+                "15日以内 31日以降",
+                "31日以内 15日以降",
+                "7日以内 2週間以降"
             ],
             "answer": [
                 "3"
@@ -793,7 +808,7 @@
         },
         {
             "id": "docomo-45",
-            "question": "各種dカードの年会費（税込み）の組み合わせとして正しいものを選択してください。\ndカードPLATINUM（A）\ndカードGOLD（B）\ndカードGOLD　U（C）\ndカード（D）",
+            "question": "各種dカードの年会費（税込み）の組み合わせとして正しいものを選択してください。\ndカードPLATINUM（A）\ndカードGOLD（B）\ndカードGOLD U（C）\ndカード（D）",
             "options": [
                 "（A）29,700円、（B）11,000円、（C）3,300円、（D）無料",
                 "（A）33,000円、（B）15,000円、（C）5,500円、（D）無料",
@@ -1082,7 +1097,7 @@
         },
         {
             "id": "auUQ-14",
-            "question": "次の文章は「auマネ活2バリューリンクプラン」について述べたものです。\n空欄(　A　)に当てはまる解答として正しい組み合わせを下記から一つ選びなさい。\n\n◎「au PAY(コード支払い/ネット支払い)決済特典」の還元と「au PAY ゴールドカード」決済の還元の合計は毎月最大(　A　)Pontaポイントです。\n\n※条件は満たすものとする\n※「au PAY ゴールドカード」を保有しているものとする\n※通常還元分を含まないものとする",
+            "question": "次の文章は「auマネ活2バリューリンクプラン」について述べたものです。\n空欄( A )に当てはまる解答として正しい組み合わせを下記から一つ選びなさい。\n\n◎「au PAY(コード支払い/ネット支払い)決済特典」の還元と「au PAY ゴールドカード」決済の還元の合計は毎月最大( A )Pontaポイントです。\n\n※条件は満たすものとする\n※「au PAY ゴールドカード」を保有しているものとする\n※通常還元分を含まないものとする",
             "options": [
                 "(A)1,000",
                 "(A)1,500",
@@ -1165,7 +1180,7 @@
         },
         {
             "id": "auUQ-20",
-            "question": "次の文章は「サブスクぷらすポイント」について述べたものです。空欄（　）に当てはまる回答としての正しいものを下記から一つ選びなさい。\n\n◎「サブスクぷらすポイント」の還元率は、2025年6月3日から最大（　）です。",
+            "question": "次の文章は「サブスクぷらすポイント」について述べたものです。空欄（ ）に当てはまる回答としての正しいものを下記から一つ選びなさい。\n\n◎「サブスクぷらすポイント」の還元率は、2025年6月3日から最大（ ）です。",
             "options": [
                 "5％",
                 "10％",
@@ -1186,11 +1201,9 @@
                 "・Youtube Premium",
                 "・TELASA",
                 "・Google One",
-                "・amazon prime",
-                "回答例"
+                "・amazon prime"
             ],
             "answer": [
-                "7",
                 "1",
                 "2",
                 "3",
@@ -1360,12 +1373,12 @@
         },
         {
             "id": "auUQ-35",
-            "question": "次の文章は「らくらくスマートフォン Lite」について述べたものです。\n空欄(　A　)(　B　)に当てはまる解答として正しい組み合わせを下記から一つ選びなさい。\n\n【お客さま情報】\n・NTTドコモでフィーチャーフォンをご利用中\n・画面の文字が小さく見づらく感じている\n・健康管理に気をつかっている\n\n【提案内容】\n「らくらくスマートフォン Lite」は、文字が小さく見づらいサイトも(　A　)を押すだけで、文字や画像を拡大できるので、見やすいです。また「ララしあコネクト」を搭載しており、(　B　)にタッチするだけで自律神経の状態を計測、可視化することができます。",
+            "question": "次の文章は「らくらくスマートフォン Lite」について述べたものです。\n空欄( A )( B )に当てはまる解答として正しい組み合わせを下記から一つ選びなさい。\n\n【お客さま情報】\n・NTTドコモでフィーチャーフォンをご利用中\n・画面の文字が小さく見づらく感じている\n・健康管理に気をつかっている\n\n【提案内容】\n「らくらくスマートフォン Lite」は、文字が小さく見づらいサイトも( A )を押すだけで、文字や画像を拡大できるので、見やすいです。また「ララしあコネクト」を搭載しており、( B )にタッチするだけで自律神経の状態を計測、可視化することができます。",
             "options": [
-                "(A)ホームボタン　(B)背面のセンサー",
-                "(A)ホームボタン　(B)音量ボタン",
-                "(A)マイクボタン　(B)背面のセンサー",
-                "(A)マイクボタン　(B)音量ボタン"
+                "(A)ホームボタン (B)背面のセンサー",
+                "(A)ホームボタン (B)音量ボタン",
+                "(A)マイクボタン (B)背面のセンサー",
+                "(A)マイクボタン (B)音量ボタン"
             ],
             "answer": [
                 "3"
@@ -1374,12 +1387,12 @@
         },
         {
             "id": "auUQ-36",
-            "question": "次の文章は「auマネ活バリューリンクプラン」について述べたものです。\n空欄(　A　)(　B　)に当てはまる解答として正しい組み合わせを下記から一つ選びなさい。\n\n◎「サービス決済特典」は「au PAY(コード支払い/ネット支払い」で決済すると200円ごとに(　A　)Pontaポイント還元。「au PAY ゴールドカード」で決済すると100円ごとに(　B　)Pontaポイント還元されます。\n\n※「au PAY ゴールドカード」を保有しているものとする\n※通常還元分を含むものとする（au PAY0.5％、au PAY カード1％）\n※それぞれ「サービス決済特典」は毎月最大1,500Pontaポイントが上限とする\n※条件は満たすものとする",
+            "question": "次の文章は「auマネ活バリューリンクプラン」について述べたものです。\n空欄( A )( B )に当てはまる解答として正しい組み合わせを下記から一つ選びなさい。\n\n◎「サービス決済特典」は「au PAY(コード支払い/ネット支払い」で決済すると200円ごとに( A )Pontaポイント還元。「au PAY ゴールドカード」で決済すると100円ごとに( B )Pontaポイント還元されます。\n\n※「au PAY ゴールドカード」を保有しているものとする\n※通常還元分を含むものとする（au PAY0.5％、au PAY カード1％）\n※それぞれ「サービス決済特典」は毎月最大1,500Pontaポイントが上限とする\n※条件は満たすものとする",
             "options": [
-                "(A)5　(B)5",
-                "(A)5　(B)10",
-                "(A)10　(B)5",
-                "(A)10　(B)10"
+                "(A)5 (B)5",
+                "(A)5 (B)10",
+                "(A)10 (B)5",
+                "(A)10 (B)10"
             ],
             "answer": [
                 "3"
@@ -1444,13 +1457,11 @@
         },
         {
             "id": "auUQ-41",
-            "question": "UQ→auの番号移行プログラム対象になる方の割引金額と割引される期間は？",
-            "options": [
-                "〇〇〇〇円引き、〇〇か月",
-                "2640、12"
-            ],
+            "question": "UQ→auの番号移行プログラム対象になる方の割引金額と割引される期間は？\n（それぞれ数値を入力してください。例：〇〇〇〇円、〇〇ヵ月）",
+            "options": [],
             "answer": [
-                "2"
+                "2640",
+                "12"
             ],
             "category": ""
         },
@@ -1470,13 +1481,10 @@
         },
         {
             "id": "auUQ-43",
-            "question": "au 5G Fast Laneとはどんなサービスでしょうか？",
-            "options": [
-                "auの〇〇エリア内であれば、接続が優先されるサービス",
-                "5G"
-            ],
+            "question": "au 5G Fast Laneとはどんなサービスでしょうか？\n（端的にauの「〇〇」エリア内 のように数値を入力してください）",
+            "options": [],
             "answer": [
-                "2"
+                "5G"
             ],
             "category": ""
         },
@@ -2256,7 +2264,6 @@
     let answeredQuestions = {};
     
     // --- 回答解析 ---
-    // "①", "A", "2" のような様々な形式の回答を "1", "2" のような数値文字列に統一する
     function parseRawAnswer(rawAnswer) {
         if (!rawAnswer || typeof rawAnswer !== 'string') return [];
         const answers = new Set();
@@ -2270,8 +2277,8 @@
             });
         }
     
-        // "①", "②"... または数字 "1", "2"... を抽出
-        const numMatches = rawAnswer.match(/[①②③④⑤12345]/g);
+        // "①", "②"... または数字 "1", "2", "9"... を抽出（6以降にも対応）
+        const numMatches = rawAnswer.match(/[①②③④⑤⑥⑦⑧⑨0-9]/g);
         if (numMatches) {
             numMatches.forEach(numChar => {
                 switch(numChar) {
@@ -2280,6 +2287,10 @@
                     case '③': answers.add('3'); break;
                     case '④': answers.add('4'); break;
                     case '⑤': answers.add('5'); break;
+                    case '⑥': answers.add('6'); break;
+                    case '⑦': answers.add('7'); break;
+                    case '⑧': answers.add('8'); break;
+                    case '⑨': answers.add('9'); break;
                     default:
                         if(!isNaN(numChar)) answers.add(numChar);
                 }
@@ -2288,11 +2299,20 @@
         return Array.from(answers);
     }
     
+    // 全角英数字を半角にし、英数字のみ抽出（記述式採点用）
+    const normalizeString = (str) => {
+        return str.replace(/[０-９ａ-ｚＡ-Ｚ]/g, function(s) {
+            return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
+        }).replace(/[^0-9a-zA-Z]/g, '').toLowerCase();
+    };
+
     // --- クイズデータの前処理 ---
-    // 全てのクイズの回答を解析済みの形式に変換
     for (const carrier in quizzes) {
         quizzes[carrier].forEach(quiz => {
-            quiz.answer = parseRawAnswer(quiz.answer.join('')); 
+            // 選択式の場合のみ parseRawAnswer を適用
+            if (quiz.options && quiz.options.length > 0) {
+                quiz.answer = parseRawAnswer(quiz.answer.join('')); 
+            }
         });
     }
 
@@ -2351,19 +2371,35 @@
             const optionsContainer = document.createElement('div');
             optionsContainer.className = 'options';
 
-            const isMultiChoice = quiz.answer.length > 1;
+            if (quiz.options && quiz.options.length > 0) {
+                const isMultiChoice = quiz.answer.length > 1;
 
-            quiz.options.forEach((option, optionIndex) => {
-                const label = document.createElement('label');
-                const input = document.createElement('input');
-                input.type = isMultiChoice ? 'checkbox' : 'radio';
-                input.name = `question-${quiz.id}`;
-                input.value = optionIndex + 1;
+                quiz.options.forEach((option, optionIndex) => {
+                    const label = document.createElement('label');
+                    const input = document.createElement('input');
+                    input.type = isMultiChoice ? 'checkbox' : 'radio';
+                    input.name = `question-${quiz.id}`;
+                    input.value = optionIndex + 1;
+                    
+                    label.appendChild(input);
+                    label.appendChild(document.createTextNode(option));
+                    optionsContainer.appendChild(label);
+                });
+            } else {
+                // 記述問題：解答の数だけ入力ボックスを生成
+                const inputWrapper = document.createElement('div');
+                inputWrapper.className = 'descriptive-input-container';
                 
-                label.appendChild(input);
-                label.appendChild(document.createTextNode(option));
-                optionsContainer.appendChild(label);
-            });
+                quiz.answer.forEach((ans, i) => {
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.className = 'descriptive-input';
+                    input.placeholder = `回答 ${i + 1}`;
+                    inputWrapper.appendChild(input);
+                });
+                
+                optionsContainer.appendChild(inputWrapper);
+            }
 
             questionBlock.appendChild(optionsContainer);
 
@@ -2425,27 +2461,48 @@
         const quizId = questionBlock.id;
         const quiz = quizzes[currentTab].find(q => q.id === quizId);
         
-        const inputs = questionBlock.querySelectorAll('input');
         const checkButton = questionBlock.querySelector('.check-btn');
         const resultMessage = questionBlock.querySelector('.result-message');
         const answerExplanation = questionBlock.querySelector('.answer-explanation');
         
-        inputs.forEach(input => {
-            input.disabled = true;
-            if (selectedAnswers.includes(input.value)) {
-                input.checked = true;
-            }
-        });
+        if (!quiz.options || quiz.options.length === 0) {
+            // 記述式
+            const textInputs = questionBlock.querySelectorAll('.descriptive-input');
+            textInputs.forEach((input, index) => {
+                input.disabled = true;
+                if (selectedAnswers.length > index) {
+                    input.value = selectedAnswers[index];
+                }
+            });
+            
+            questionBlock.classList.add(isCorrect ? 'correct' : 'incorrect');
+            resultMessage.textContent = isCorrect ? '正解！' : '不正解';
+            resultMessage.className = `result-message ${isCorrect ? 'correct' : 'incorrect'}`;
+            
+            answerExplanation.innerHTML = `<strong>正解:</strong> ${quiz.answer.join('、')}`;
+            answerExplanation.classList.remove('hidden');
+            
+            if(checkButton) checkButton.classList.add('hidden');
+        } else {
+            // 選択式
+            const inputs = questionBlock.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.disabled = true;
+                if (selectedAnswers.includes(input.value)) {
+                    input.checked = true;
+                }
+            });
 
-        questionBlock.classList.add(isCorrect ? 'correct' : 'incorrect');
-        resultMessage.textContent = isCorrect ? '正解！' : '不正解';
-        resultMessage.className = `result-message ${isCorrect ? 'correct' : 'incorrect'}`;
-        
-        const correctAnswersText = quiz.answer.map(ans => quiz.options[parseInt(ans) - 1]).join(', ');
-        answerExplanation.innerHTML = `<strong>正解:</strong> ${correctAnswersText}`;
-        answerExplanation.classList.remove('hidden');
-        
-        if(checkButton) checkButton.classList.add('hidden');
+            questionBlock.classList.add(isCorrect ? 'correct' : 'incorrect');
+            resultMessage.textContent = isCorrect ? '正解！' : '不正解';
+            resultMessage.className = `result-message ${isCorrect ? 'correct' : 'incorrect'}`;
+            
+            const correctAnswersText = quiz.answer.map(ans => quiz.options[parseInt(ans) - 1]).join(', ');
+            answerExplanation.innerHTML = `<strong>正解:</strong> ${correctAnswersText}`;
+            answerExplanation.classList.remove('hidden');
+            
+            if(checkButton) checkButton.classList.add('hidden');
+        }
     }
     
     // --- イベントハンドラ ---
@@ -2462,19 +2519,49 @@
         const quizId = button.dataset.id;
         const questionBlock = document.getElementById(quizId);
         const quiz = quizzes[currentTab].find(q => q.id === quizId);
-        const selectedInputs = questionBlock.querySelectorAll('input:checked');
-
-        if (selectedInputs.length === 0) {
-            alert('答えを選択してください。');
-            return;
-        }
-
-        const selectedAnswers = Array.from(selectedInputs).map(input => input.value);
         
-        selectedAnswers.sort();
-        const correctAnswers = [...quiz.answer].sort();
+        let selectedAnswers = [];
+        let isCorrect = false;
 
-        const isCorrect = JSON.stringify(selectedAnswers) === JSON.stringify(correctAnswers);
+        if (!quiz.options || quiz.options.length === 0) {
+            // 記述式の採点
+            const textInputs = questionBlock.querySelectorAll('.descriptive-input');
+            let allFilled = true;
+            
+            textInputs.forEach(input => {
+                const val = input.value.trim();
+                if (!val) allFilled = false;
+                selectedAnswers.push(val);
+            });
+            
+            if (!allFilled) {
+                alert('すべての回答欄に入力してください。');
+                return;
+            }
+            
+            // 完全一致（半角・全角問わず数字/アルファベットだけを抽出して比較）
+            isCorrect = true;
+            for (let i = 0; i < quiz.answer.length; i++) {
+                if (normalizeString(selectedAnswers[i]) !== normalizeString(quiz.answer[i])) {
+                    isCorrect = false;
+                    break;
+                }
+            }
+        } else {
+            // 選択式の採点
+            const selectedInputs = questionBlock.querySelectorAll('input:checked');
+
+            if (selectedInputs.length === 0) {
+                alert('答えを選択してください。');
+                return;
+            }
+
+            selectedAnswers = Array.from(selectedInputs).map(input => input.value);
+            selectedAnswers.sort();
+            const correctAnswers = [...quiz.answer].sort();
+
+            isCorrect = JSON.stringify(selectedAnswers) === JSON.stringify(correctAnswers);
+        }
 
         answeredQuestions[quizId] = { isCorrect: isCorrect, selected: selectedAnswers };
         
@@ -2560,9 +2647,16 @@
                 answerExplanation.classList.add('hidden');
                 if (checkButton) checkButton.classList.remove('hidden');
 
-                questionBlock.querySelectorAll('input').forEach(input => {
+                // 選択式リセット
+                questionBlock.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(input => {
                     input.disabled = false;
                     input.checked = false;
+                });
+                
+                // 記述式リセット
+                questionBlock.querySelectorAll('.descriptive-input').forEach(input => {
+                    input.disabled = false;
+                    input.value = '';
                 });
                 
                 if (answeredQuestions.hasOwnProperty(quizId)) {
@@ -2611,4 +2705,3 @@
 </script>
 </body>
 </html>
-
